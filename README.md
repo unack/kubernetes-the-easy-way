@@ -27,8 +27,8 @@ Disable SWAP
 
 Containerd install
 ```
-$ sudo apt-get update
-$ sudo apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release
+$ sudo apt update
+$ sudo apt install -y apt-transport-https ca-certificates curl gnupg lsb-release
 
 
 $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -60,7 +60,7 @@ $sudo systemctl restart containerd
 
 Kubernetes install
 ```
-$ sudo apt-get update && sudo apt-get install -y apt-transport-https
+$ sudo apt update && sudo apt install -y apt-transport-https
 $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 $ sudo apt update
