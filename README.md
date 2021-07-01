@@ -18,10 +18,15 @@ What we need, 2 workstations/servers :
      * Optionnaly, without Swap
 
 :footprints: [First, let's disable the Swap](00_InitialSteps_All_DisableSwap.md)
+
 :footprints: [Initial setup before Kuberneting](01_InitialSteps_All_Install.md)
+
 :footprints: [Kubernetes initialisation: Init PlaneControl](02_Kubernetes_Init.md)
+
 :footprints: [Kubernetes initialisation: Add a Pod](03_Kubernetes_Pod_Join.md)
+
 :footprints: [Kubernetes Dashboard](04_Kubernetes_Dashboard.md)
+
 :footprints: [Kubernetes CLI Completion](05_Kubernetes_CLI_Completion.md)
 
 Note : this short guide is a bit opinionated, as we use Containerd instead of Docker, and, among all providers of Kubernetes network layers, Weaver has been picked.
