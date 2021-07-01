@@ -7,7 +7,7 @@ br_netfilter
 EOF
 
 $ sudo modprobe overlay
-$sudo modprobe br_netfilter
+$ sudo modprobe br_netfilter
 ```
 
 ```
@@ -17,12 +17,6 @@ net.ipv4.ip_forward                 = 1
 net.bridge.bridge-nf-call-ip6tables = 1
 EOF
 $ sudo sysctl --system
-```
-
-Disable SWAP
-```
-# /sbin/swapoff -a
-# vim /etc/fstab
 ```
 
 Containerd install
@@ -40,10 +34,10 @@ $ sudo apt install containerd
 
 Containerd setup
 ```
-apt update
-sudo mkdir -p /etc/containerd
-containerd config default | sudo tee /etc/containerd/config.toml
-vim /etc/containerd/config.toml
+$ sudo apt update
+$ sudo mkdir -p /etc/containerd
+$ containerd config default | sudo tee /etc/containerd/config.toml
+$ sudo vim /etc/containerd/config.toml
 ...
       [plugins."io.containerd.grpc.v1.cri".containerd.runtimes]
         [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
@@ -55,7 +49,7 @@ vim /etc/containerd/config.toml
           [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
             SystemdCgroup = true
 ...
-sudo systemctl restart containerd
+$ sudo systemctl restart containerd
 ```
 
 Kubernetes install
