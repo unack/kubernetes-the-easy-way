@@ -4,9 +4,9 @@ Kubernetes - The not so hard way
 
 Welcome to a short guide to set up a "bare metal" (:metal:) stand-alone Kubernetes cluster !
 
-If you want to sandbox your own Kubernetes cluster, let's go.
+If you want to sandbox your own Kubernetes cluster, without any AWS, GCP or Azure account, let's go.
 
-What we need, 2 workstations/servers :
+What we need, 2 servers :
  * 1 PlaneControl
    * OS : Debian
    * CPU Cores : 2
@@ -16,6 +16,10 @@ What we need, 2 workstations/servers :
    * Same as PlaneControl, but
    * Minimal RAM : 4 Go
      * Optionnaly, without Swap
+
+Kubernetes picked(/opinionated) options :
+ * Container : Containerd (yes, not Docker)
+ * Network Add-on : Weaver
 
 :footprints: [First, let's disable the Swap](00_InitialSteps_All_DisableSwap.md)
 
@@ -29,4 +33,3 @@ What we need, 2 workstations/servers :
 
 :footprints: [Kubernetes CLI Completion](05_Kubernetes_CLI_Completion.md)
 
-Note : this short guide is a bit opinionated, as we use Containerd instead of Docker, and, among all providers of Kubernetes network layers, Weaver has been picked.
