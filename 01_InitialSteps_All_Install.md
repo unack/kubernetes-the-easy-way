@@ -34,7 +34,6 @@ $ sudo apt install containerd
 
 Containerd setup
 ```
-$ sudo apt update
 $ sudo mkdir -p /etc/containerd
 $ containerd config default | sudo tee /etc/containerd/config.toml
 $ sudo vim /etc/containerd/config.toml
