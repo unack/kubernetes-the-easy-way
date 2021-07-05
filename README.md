@@ -23,6 +23,8 @@ Kubernetes picked(/opinionated) options :
  * Container : Containerd (yes, not Docker)
  * Network Add-on : Weaver
 
+Tested on 2021-07-05, with Kubernetes 1.21
+
 **_InitialSteps_All_** are meant to be executed on all servers.
 
 :footprints: [First, let's disable the Swap](00_InitialSteps_All_DisableSwap.md)
