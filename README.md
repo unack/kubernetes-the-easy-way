@@ -27,9 +27,9 @@ Tested on 2021-07-05, with Kubernetes 1.21
 
 **All servers** are meant to be executed on all servers.
 
-:footprints: [(All servers)First, let's disable the Swap](00_InitialSteps_All_DisableSwap.md)
+:footprints: [(All servers) First, let's disable the Swap](00_InitialSteps_All_DisableSwap.md)
 
-:footprints: [(All servers)Initial setup before Kuberneting](01_InitialSteps_All_Install.md)
+:footprints: [(All servers) Initial setup before Kuberneting](01_InitialSteps_All_Install.md)
 
 :footprints: [Kubernetes initialisation: Init PlaneControl](02_Kubernetes_Init.md)
 
