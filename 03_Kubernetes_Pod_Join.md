@@ -1,8 +1,8 @@
 # kubernetes-the-not-so-hard-way
 
 Kubernetes - Pod - Joining
- - Get join command from PlaneControl
-@planecontrol
+ - Get join command from ControlPlane
+@ControlPlane
 ```
 kubeadm token create --print-join-command
 ```

@@ -6,8 +6,8 @@ Welcome to a short guide to set up a "bare metal" (:metal:) stand-alone Kubernet
 
 If you want to sandbox your own Kubernetes cluster, without any AWS, GCP or Azure account, let's go.
 
-What we need, 2 servers :
- * 1 server, as PlaneControl #1
+What we need, 2 servers, with different IP in the same network :
+ * 1 server, as ControlPlane #1, aka our planemaster
    * OS : Debian
    * CPU Cores : 2 or more
    * Minimal RAM : 2 Go
@@ -20,16 +20,16 @@ What we need, 2 servers :
      * Optionnaly, without Swap
 
 Kubernetes picked(/opinionated) options :
- * Container : Containerd (yes, not Docker)
+ * Container : Containerd (yes, without Docker)
  * Network Add-on : Weaver
 
 Tested on 2021-07-05, with Kubernetes 1.21
 
-**_InitialSteps_All_** are meant to be executed on all servers.
+**All servers** are meant to be executed on all servers.
 
-:footprints: [First, let's disable the Swap](00_InitialSteps_All_DisableSwap.md)
+:footprints: [(All servers)First, let's disable the Swap](00_InitialSteps_All_DisableSwap.md)
 
-:footprints: [Initial setup before Kuberneting](01_InitialSteps_All_Install.md)
+:footprints: [(All servers)Initial setup before Kuberneting](01_InitialSteps_All_Install.md)
 
 :footprints: [Kubernetes initialisation: Init PlaneControl](02_Kubernetes_Init.md)
 

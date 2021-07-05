@@ -1,24 +1,24 @@
 List the nodes and their statuses in the cluster
 ```
-user@planecontrol $ kubectl get nodes
+user@planemaster $ kubectl get nodes
 ```
 
 The same, but let observe the updates
 ```
-user@planecontrat $ kubectl get nodes -w
+user@planemaster $ kubectl get nodes -w
 ```
 
 List the pods
 ```
-user@planecontrol $ kubectl get pods
+user@planemaster $ kubectl get pods
 ```
 
 List the services
 ```
-user@planecontol $ kubectl get services
+user@planemaster $ kubectl get services
 ```
 
 List the deployments
 ```
-user@planecontrol $ kubectl get deployments
+user@planemaster $ kubectl get deployments
 ```
