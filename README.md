@@ -1,4 +1,4 @@
-# kubernetes-the-not-so-hard-way
+# kubernetes-the-easy-way
 
 Kubernetes - The not so hard way
 
