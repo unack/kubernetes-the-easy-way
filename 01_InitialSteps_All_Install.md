@@ -54,8 +54,8 @@ $ sudo systemctl restart containerd
 Kubernetes install
 ```
 $ sudo apt update && sudo apt-get install -y apt-transport-https
-$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-$ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+$ curl -s https://apt.kubernetes.io/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/google-kubernetes-keyring.gpg
+$ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google-kubernetes-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/google-kubernetes.list > /dev/null
 $ sudo apt update
 
 $ sudo apt install -y kubelet kubeadm kubectl
